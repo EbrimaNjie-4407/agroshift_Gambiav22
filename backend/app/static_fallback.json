@@ -1,0 +1,521 @@
+{
+  "field_id": "field-001",
+  "evaluation_timestamp": "2026-11-11T22:42:36.685258+00:00",
+  "location": {
+    "district": "Brikama Manduar",
+    "region": "West Coast Region",
+    "country": "The Gambia",
+    "latitude": 13.24890667,
+    "longitude": -16.61527333
+  },
+  "features": {
+    "rain_total_mm": {
+      "value": 1170.3,
+      "range": [
+        844.2,
+        1520.8
+      ],
+      "rank": null,
+      "unit": "mm",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "merra2_mean": 1170.3,
+      "merra2_range": [
+        844.2,
+        1520.8
+      ],
+      "imerg_mean": 1111.5,
+      "imerg_range": [
+        917.0,
+        1450.9
+      ],
+      "year_2026_status": {
+        "year": 2026,
+        "in_reference_period": false,
+        "merra2_rain_mm": 978.5,
+        "imerg_rain_mm": null,
+        "merra2_longest_dry_spell_d": 4,
+        "imerg_missing_days": 47,
+        "imerg_spell_missing_days": 16,
+        "status": "incomplete"
+      },
+      "resolution": "MERRA-2 0.5\u00b0x0.625\u00b0 / IMERG 0.1\u00b0",
+      "period": "June 1 - October 31 (2015-2025 Reference Period)",
+      "data_type": "Reanalysis and satellite-derived precipitation estimates",
+      "confidence": "medium",
+      "notes": "10-year reference baseline. MERRA-2 and IMERG kept separate. 2026 IMERG has 47 trailing missing days (16 in July-Sept window) and is treated as incomplete without zero imputation."
+    },
+    "dry_spell_max_days": {
+      "value": 2.9,
+      "range": [
+        1,
+        10
+      ],
+      "merra2_range": [
+        1,
+        4
+      ],
+      "imerg_range": [
+        3,
+        10
+      ],
+      "unit": "days",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July 1 - September 30 (Core 92-Day Vegetative Window)",
+      "data_type": "Consecutive days with precipitation < 1.0 mm",
+      "confidence": "medium",
+      "notes": "Evaluated strictly on the July 1 to September 30 dry-spell window. Longest dry spell averages 3-4 days in MERRA-2 and 5-6 days in IMERG."
+    },
+    "dry_spells_ge7d": {
+      "value": 0.4,
+      "range": [
+        0,
+        2
+      ],
+      "merra2_range": [
+        0,
+        0
+      ],
+      "imerg_range": [
+        0,
+        2
+      ],
+      "unit": "events/season",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July 1 - September 30",
+      "data_type": "Count of dry spells lasting >= 7 consecutive days",
+      "confidence": "medium",
+      "notes": "Rare in MERRA-2 (0 occurrences across 10 years); IMERG identifies 0 to 2 occurrences per season."
+    },
+    "ndvi_cover_nov_jun": {
+      "value": 0.35,
+      "range": [
+        0.24,
+        0.42
+      ],
+      "unit": "NDVI",
+      "dataset": "MODIS MOD13Q1",
+      "resolution": "250m (~6.25 hectares per pixel)",
+      "period": "November - June (2015-2026)",
+      "data_type": "Satellite vegetation index (16-day composite)",
+      "quality_filter": "Good-quality composites only (reliability 0 and 1, 80.51% usable)",
+      "confidence": "high",
+      "notes": "Landscape vegetation-cover context only. Pixel is ~6.25 ha and reflects area tree/brush cover; do not interpret as direct single-field crop stress or yield."
+    },
+    "slope_pct": {
+      "value": 0.8,
+      "unit": "%",
+      "dataset": "SRTM v3",
+      "resolution": "30m",
+      "elevation_m": 25.0,
+      "period": "Static terrain model",
+      "data_type": "Derived radar digital elevation model",
+      "confidence": "high",
+      "notes": "Represents area-level slope context. Very gentle plain slope (<1%) with elevation 25-26 m; low water runoff erosion risk."
+    },
+    "soil_texture": {
+      "value": "Sandy loam (inferred)",
+      "unit": "57% sand, 12% clay",
+      "sand_pct": 56.8,
+      "clay_pct": 12.0,
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Spatial machine learning prediction (Q0.5 median)",
+      "confidence": "medium",
+      "notes": "Modelled soil prediction, not laboratory test. Silt fraction not extracted; partial textural indication only."
+    },
+    "soc": {
+      "value": 7.9,
+      "topsoil_0_5cm": 10.1,
+      "unit": "g/kg",
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property (Q0.5)",
+      "confidence": "medium",
+      "notes": "Soil organic carbon: 10.1 g/kg (0-5cm), 8.1 g/kg (5-15cm), 5.5 g/kg (15-30cm). Moderately low organic matter typical of West African upland soils."
+    },
+    "ph": {
+      "value": 5.3,
+      "unit": "pH (H2O)",
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property (Q0.5)",
+      "confidence": "medium",
+      "notes": "Moderately acidic topsoil (pH 5.2 - 5.4). Well-suited to groundnut, cowpea, and pearl millet; slightly acidic for sensitive maize varieties."
+    },
+    "soil_moisture_regional": {
+      "value": 0.227,
+      "surface_value": 0.204,
+      "unit": "m3/m3",
+      "dataset": "NASA SMAP L4_SM v8.1",
+      "resolution": "9km (EASE-Grid 2.0)",
+      "period": "July - October (2015-2025 mid-month snapshots)",
+      "data_type": "Modelled geophysical assimilation",
+      "confidence": "medium",
+      "notes": "Regional subsoil moisture snapshot (0-100cm). Nearest grid cell centroid is 6.168 km from field. Mid-month snapshots, not continuous field sensor probes."
+    }
+  },
+  "constraints_check": {
+    "passed": true,
+    "evaluated_constraints": [
+      {
+        "name": "Water Source Feasibility",
+        "status": "Passed",
+        "details": "Proposed sequences fit rain-fed rainy season window (June-October)."
+      },
+      {
+        "name": "Seed Access Feasibility",
+        "status": "Passed",
+        "details": "Candidate crops align with Medium / Local market seed channels."
+      },
+      {
+        "name": "Crop History Rotation Balance",
+        "status": "Passed",
+        "details": "Past sequence maintained a balanced cereal-legume rotation."
+      }
+    ]
+  },
+  "strategies": [
+    {
+      "id": "A",
+      "name": "Option A: Legume-Cereal Nitrogen Restoring Rotation",
+      "role": "primary_alternative",
+      "score": 87.2,
+      "score_range": [
+        83.7,
+        90.7
+      ],
+      "rank": 1,
+      "feasibility_status": "Feasible",
+      "confidence": "medium",
+      "criteria": [
+        {
+          "name": "Water Efficiency",
+          "score": 86.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Soil Health Restoration",
+          "score": 92.0,
+          "weight": 0.3
+        },
+        {
+          "name": "Food Security",
+          "score": 84.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Income Potential",
+          "score": 88.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Labour Fit",
+          "score": 80.0,
+          "weight": 0.1
+        }
+      ],
+      "sequence": [
+        {
+          "season": "Season 1 (Upcoming)",
+          "crop": "Cowpea (Dual-Purpose)",
+          "type": "Legume",
+          "months": "July - September"
+        },
+        {
+          "season": "Season 2",
+          "crop": "Early Millet (Souna)",
+          "type": "Cereal",
+          "months": "June - October"
+        },
+        {
+          "season": "Season 3",
+          "crop": "Groundnut + Sesame Intercrop",
+          "type": "Legume / Oilseed",
+          "months": "July - October"
+        }
+      ],
+      "why": "Optimizes soil fertility and disease disruption. Introducing dual-purpose cowpea in Season 1 breaks groundnut-specific leaf spot pathogens while fixing 35-50 kg N/ha for subsequent Souna millet. Year 3 pairs groundnut with drought-tolerant sesame for diversified cash income.",
+      "evidence": [
+        {
+          "feature": "soc",
+          "source": "ISRIC SoilGrids 2.0",
+          "observation": "Topsoil organic carbon is 7.9 g/kg. Incorporating leafy cowpea residue directly addresses organic matter deficit."
+        },
+        {
+          "feature": "rain_total_mm",
+          "source": "NASA POWER (MERRA-2 & IMERG)",
+          "observation": "Short-duration dual-purpose cowpea (65-75 days) matures safely within the 10-year mean rainfall window of 1170.3 mm."
+        },
+        {
+          "feature": "ndvi_cover_nov_jun",
+          "source": "MODIS MOD13Q1",
+          "observation": "Landscape dry-season background vegetation cover (NDVI 0.35) benefits from cowpea post-harvest residue mulch."
+        }
+      ],
+      "benefits": [
+        "Disrupts Cercospora leaf spot and root-knot nematode cycles on groundnut-tired plots",
+        "Provides 35-50 kg/ha biologically fixed nitrogen to nourish following Early Millet cereal",
+        "Early cowpea harvest (September) breaks the household hungry season gap",
+        "Diversified income stream from high-value sesame in Season 3"
+      ],
+      "trade_offs": [
+        "Requires field scouting for cowpea pod borer (Maruca vitrata) during flowering",
+        "Sesame requires careful harvesting to prevent seed shattering losses",
+        "Requires sourcing certified dual-purpose cowpea seed (e.g., Dania or Iron cultivars)"
+      ],
+      "gaps": [
+        "Local availability of certified cowpea inoculant in West Coast Region agricultural depots",
+        "Partial soil texture classification (silt percentage unextracted in pilot SoilGrids dataset)"
+      ],
+      "risks_for_local_review": [
+        "Consult the local Brikama agricultural extension agent regarding approved cowpea varieties for sandy loams.",
+        "Confirm market pricing for sesame with local commodity traders before Year 3 planting."
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Option B: Resilient Low-Input Drought Buffer Rotation",
+      "role": "secondary_alternative",
+      "score": 79.6,
+      "score_range": [
+        75.6,
+        83.6
+      ],
+      "rank": 2,
+      "feasibility_status": "Feasible",
+      "confidence": "medium",
+      "criteria": [
+        {
+          "name": "Water Efficiency",
+          "score": 90.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Soil Health Restoration",
+          "score": 74.0,
+          "weight": 0.3
+        },
+        {
+          "name": "Food Security",
+          "score": 82.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Income Potential",
+          "score": 72.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Labour Fit",
+          "score": 86.0,
+          "weight": 0.1
+        }
+      ],
+      "sequence": [
+        {
+          "season": "Season 1 (Upcoming)",
+          "crop": "Sorghum (Grain & Fodder)",
+          "type": "Cereal",
+          "months": "July - October"
+        },
+        {
+          "season": "Season 2",
+          "crop": "Groundnut",
+          "type": "Legume",
+          "months": "July - October"
+        },
+        {
+          "season": "Season 3",
+          "crop": "Cowpea / Fallow Rest",
+          "type": "Legume / Cover",
+          "months": "August - November"
+        }
+      ],
+      "why": "Prioritizes drought resilience, input minimization, and livestock integration. Deep-rooted sorghum (Kinto) thrives in slightly acidic sandy soil (pH 5.3), followed by groundnut and a restorative cowpea fallow cover.",
+      "evidence": [
+        {
+          "feature": "slope_pct",
+          "source": "SRTM v3",
+          "observation": "Gentle terrain slope (0.8%) allows deep root anchoring with minimal surface runoff risk."
+        },
+        {
+          "feature": "dry_spells_ge7d",
+          "source": "NASA POWER (MERRA-2 & IMERG)",
+          "observation": "Historical dry spells >= 7 days average 0.4 events/season; sorghum's deep root architecture buffers against mid-season drought."
+        },
+        {
+          "feature": "soil_moisture_regional",
+          "source": "NASA SMAP L4_SM",
+          "observation": "Subsoil moisture assimilation (0.227 m3/m3) is accessible to deep sorghum root systems."
+        }
+      ],
+      "benefits": [
+        "Exceptional tolerance to irregular rainfall and July-August dry spells",
+        "Produces valuable stover biomass for dry-season cattle and small ruminant fodder",
+        "Lowest synthetic fertilizer and seed capital expenditure",
+        "Gradual organic matter rebuilding through deep root decomposition"
+      ],
+      "trade_offs": [
+        "Sorghum grain fetches a lower cash market price than confectionary groundnut",
+        "Requires vigilance against grain-eating birds (Quelea quelea) during milky dough stage",
+        "Longer maturity duration (105-115 days) than Early Millet"
+      ],
+      "gaps": [
+        "SMAP moisture observations are mid-month snapshots rather than continuous daily averages",
+        "Exact subsoil compaction depth at the specific farm site is unmeasured"
+      ],
+      "risks_for_local_review": [
+        "Confirm family or community labour availability for bird scaring during sorghum heading.",
+        "Verify local livestock grazing agreements regarding stover retention on the plot."
+      ]
+    },
+    {
+      "id": "current",
+      "name": "Current Practice (Baseline)",
+      "role": "reference",
+      "score": 75.3,
+      "score_range": [
+        71.3,
+        79.3
+      ],
+      "rank": 3,
+      "feasibility_status": "Feasible",
+      "confidence": "medium",
+      "criteria": [
+        {
+          "name": "Water Efficiency",
+          "score": 68.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Soil Health Restoration",
+          "score": 75.0,
+          "weight": 0.3
+        },
+        {
+          "name": "Food Security",
+          "score": 78.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Income Potential",
+          "score": 82.0,
+          "weight": 0.2
+        },
+        {
+          "name": "Labour Fit",
+          "score": 72.0,
+          "weight": 0.1
+        }
+      ],
+      "sequence": [
+        {
+          "season": "Season 1",
+          "year": "2022/2023",
+          "crop": "Groundnut",
+          "type": "Fabaceae (Legume)"
+        },
+        {
+          "season": "Season 2",
+          "year": "2023/2024",
+          "crop": "Groundnut",
+          "type": "Fabaceae (Legume)"
+        },
+        {
+          "season": "Season 3",
+          "year": "2024/2025",
+          "crop": "Early Millet",
+          "type": "Poaceae (Cereal)"
+        }
+      ],
+      "why": "Represents the farmer's established field practice. Provides staple food security and cash crop income, but carries elevated pest risks if legume-cereal breaks are omitted.",
+      "evidence": [
+        {
+          "feature": "dry_spell_max_days",
+          "source": "NASA POWER (MERRA-2 & IMERG)",
+          "observation": "July-Sept dry spells average 2.9 days. Fits current crop moisture demands."
+        },
+        {
+          "feature": "ph",
+          "source": "ISRIC SoilGrids 2.0",
+          "observation": "Topsoil pH 5.3 is well tolerated by groundnut and pearl millet."
+        },
+        {
+          "feature": "farmer_observation",
+          "source": "Farmer Field Input",
+          "observation": "Farmer observed: \"Sandy loam soil, observed early dry spell in July.\""
+        }
+      ],
+      "benefits": [
+        "Familiar field management routine requiring no new seed sourcing",
+        "Reliable baseline staple cereal supply in cereal rotation years",
+        "Known market outlets for harvested produce in Brikama"
+      ],
+      "trade_offs": [
+        "Elevated risk of Cercospora leaf spot and soil-borne fungal pathogens if groundnut is repeated",
+        "Nutrient mining of soil organic carbon and micro-nutrients without green manure",
+        "High peak labor bottleneck during October lifting and stripping"
+      ],
+      "gaps": [
+        "No laboratory soil test for available phosphorus or potassium",
+        "SMAP soil moisture data is regional (~9 km grid) rather than field-probe specific"
+      ],
+      "risks_for_local_review": [
+        "Inspect field for early leaf spot lesions and parasitic Striga seedbanks before next planting.",
+        "Confirm that harvested seed pods are dried promptly to prevent aflatoxin contamination."
+      ]
+    }
+  ],
+  "weights": {
+    "water_efficiency": 0.2,
+    "soil_health_restoration": 0.3,
+    "food_security": 0.2,
+    "income_potential": 0.2,
+    "labour_fit": 0.1
+  },
+  "farmer_inputs": {
+    "field_details": {
+      "name": "Brikama Manduar Pilot Field",
+      "size_ha": 2.5,
+      "field_type": "Upland",
+      "observed_soil": "Sandy loam"
+    },
+    "crop_history": {
+      "season_1": "Groundnut",
+      "season_2": "Groundnut",
+      "season_3": "Early Millet"
+    },
+    "farming_system": {
+      "intercropping": false,
+      "farmer_observations": "Sandy loam soil, observed early dry spell in July."
+    },
+    "priorities": {
+      "conserve_water": 20,
+      "improve_soil_health": 30,
+      "increase_food_production": 20,
+      "generate_income": 20,
+      "reduce_labour": 10
+    },
+    "constraints": {
+      "water_source": "Rain-fed only",
+      "seed_availability": "Medium / Local market",
+      "labour_availability": "Moderate hired labour",
+      "budget_level": "Low / Minimal input"
+    }
+  },
+  "disclaimer": "Decision-support suggestions only. Recommendations are grounded in historical NASA environmental reanalysis and SoilGrids spatial models. They do not constitute guaranteed agricultural outcomes or warranted yield predictions. Farmers and agricultural extension officers must inspect local field drainage, weed pressure, and seed vigor before field implementation."
+}

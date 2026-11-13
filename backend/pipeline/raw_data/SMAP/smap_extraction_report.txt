@@ -1,0 +1,28 @@
+NASA SMAP L4 SOIL MOISTURE EXTRACTION REPORT
+=======================================================
+Extraction time UTC: 2026-11-11T03:12:21.720507+00:00
+Pilot latitude: 13.24890667
+Pilot longitude: -16.61527333
+Product: SMAP L4_SM Geophysical Data, Version 8.1
+Grid: EASE-Grid 2.0, approximately 9 km
+Surface variable: sm_surface, 0-5 cm
+Root-zone variable: sm_rootzone, 0-100 cm
+Units: m3/m3
+Valid range: 0.0 to 0.9
+Fill value: -9999
+Sampling: One mid-month granule per selected month
+Important: These are snapshots, not monthly averages.
+
+Surface files found: 44
+Root-zone files found: 44
+Successfully paired and extracted months: 44
+Valid surface observations: 44
+Valid root-zone observations: 44
+Extraction errors: 0
+Nearest-cell distance, minimum: 6.168 km
+Nearest-cell distance, maximum: 6.168 km
+
+ERROR DETAILS:
+None
+
+Output CSV: data\SMAP_midmonth\smap_pilot_moisture.csv

@@ -1,0 +1,33 @@
+AGROSHIFT GAMBIA
+MODIS NDVI DATA QUALITY REPORT
+=======================================================
+Latitude: 13.24890667
+Longitude: -16.61527333
+Product: MOD13Q1
+Resolution: 250 m
+Composite interval: 16 days
+Start date: 2015-01-01
+End date: 2026-10-31
+
+Total composites: 272
+Good observations: 190
+Marginal observations: 29
+Usable observations: 219
+Cloudy observations: 53
+Snow/ice observations: 0
+Missing or invalid observations: 0
+Usable data percentage: 80.51%
+
+Minimum usable NDVI: 0.2274
+Maximum usable NDVI: 0.8123
+Mean usable NDVI: 0.4156
+
+INTERPRETATION NOTES
+- NDVI measures vegetation greenness.
+- NDVI is not a direct measurement of crop yield.
+- Reliability values 0 and 1 are treated as usable.
+- Missing and unreliable observations are not imputed.
+- A 250 m pixel covers approximately 6.25 hectares.
+- One pixel does not necessarily represent one farm.
+- These are satellite observations, not field measurements.
+=======================================================

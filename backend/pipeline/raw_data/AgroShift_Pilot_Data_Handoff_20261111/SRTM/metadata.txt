@@ -1,0 +1,12 @@
+﻿AGROSHIFT GAMBIA - SRTM METADATA
+Source: NASA SRTM
+Tile: N13W017.hgt
+Tile format: 3601 x 3601 elevation grid
+Approximate resolution: 1 arc-second (~30 metres)
+Pilot latitude: 13.24890667
+Pilot longitude: -16.61527333
+Extracted pilot elevation: 25 metres
+Neighbourhood: 3 x 3 pixels
+Vertical datum: EGM96
+The elevation is a satellite-derived pixel estimate,
+not a ground-surveyed field elevation.

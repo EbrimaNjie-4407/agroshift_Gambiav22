@@ -1,0 +1,25 @@
+property,depth,raw_value,converted_value,unit,quantile,coverage_id,latitude,longitude,source
+phh2o,0-5cm,54.0,5.4,pH,Q0.5,phh2o_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+phh2o,5-15cm,53.0,5.3,pH,Q0.5,phh2o_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+phh2o,15-30cm,53.0,5.3,pH,Q0.5,phh2o_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+phh2o,30-60cm,52.0,5.2,pH,Q0.5,phh2o_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+soc,0-5cm,101.0,10.1,g/kg,Q0.5,soc_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+soc,5-15cm,81.0,8.1,g/kg,Q0.5,soc_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+soc,15-30cm,55.0,5.5,g/kg,Q0.5,soc_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+soc,30-60cm,45.0,4.5,g/kg,Q0.5,soc_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+clay,0-5cm,113.0,11.3,%,Q0.5,clay_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+clay,5-15cm,111.0,11.1,%,Q0.5,clay_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+clay,15-30cm,137.0,13.7,%,Q0.5,clay_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+clay,30-60cm,133.0,13.3,%,Q0.5,clay_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+sand,0-5cm,570.0,57.0,%,Q0.5,sand_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+sand,5-15cm,585.0,58.5,%,Q0.5,sand_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+sand,15-30cm,549.0,54.9,%,Q0.5,sand_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+sand,30-60cm,590.0,59.0,%,Q0.5,sand_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+nitrogen,0-5cm,88.0,0.88,g/kg,Q0.5,nitrogen_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+nitrogen,5-15cm,80.0,0.8,g/kg,Q0.5,nitrogen_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+nitrogen,15-30cm,59.0,0.59,g/kg,Q0.5,nitrogen_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+nitrogen,30-60cm,48.0,0.48,g/kg,Q0.5,nitrogen_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+bdod,0-5cm,148.0,1.48,kg/dm3,Q0.5,bdod_0-5cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+bdod,5-15cm,150.0,1.5,kg/dm3,Q0.5,bdod_5-15cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+bdod,15-30cm,148.0,1.48,kg/dm3,Q0.5,bdod_15-30cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0
+bdod,30-60cm,146.0,1.46,kg/dm3,Q0.5,bdod_30-60cm_Q0.5,13.24890667,-16.61527333,ISRIC SoilGrids 2.0

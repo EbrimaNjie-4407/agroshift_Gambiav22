@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --primary-green: #166534;
+    --primary-green-hover: #14532d;
+    --primary-green-light: #f0fdf4;
+    --accent-orange: #ea580c;
+    --accent-orange-light: #fff7ed;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --surface: #ffffff;
+    --surface-subtle: #f9fafb;
+    --border-subtle: #e5e7eb;
+    --border-strong: #d1d5db;
+  }
+
+  body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-primary);
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Print Rules for the Printable Farmer Report */
+@media print {
+  header, nav, aside, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 2px solid #166534;
+  outline-offset: 2px;
+}
+
+/* Figma Page 4 Priority Slider */
+.agroshift-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: #116b37;
+  cursor: pointer;
+}
+
+.agroshift-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 3px solid #ea7b15;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.agroshift-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.agroshift-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 3px solid #ea7b15;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+@keyframes agroshiftChartFade {
+  from {
+    opacity: 0.25;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.agroshift-chart-enter {
+  animation: agroshiftChartFade 240ms ease-out;
+}
+

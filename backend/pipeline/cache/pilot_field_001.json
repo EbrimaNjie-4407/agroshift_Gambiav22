@@ -1,0 +1,171 @@
+{
+  "field_id": "field-001",
+  "location": {
+    "district": "Brikama Manduar",
+    "region": "West Coast Region",
+    "country": "The Gambia",
+    "latitude": 13.24890667,
+    "longitude": -16.61527333
+  },
+  "features": {
+    "rain_total_mm": {
+      "value": 1170.3,
+      "range": [
+        844.2,
+        1520.8
+      ],
+      "rank": null,
+      "unit": "mm",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "merra2_mean": 1170.3,
+      "merra2_range": [
+        844.2,
+        1520.8
+      ],
+      "imerg_mean": 1111.5,
+      "imerg_range": [
+        917.0,
+        1450.9
+      ],
+      "year_2026_status": {
+        "year": 2026,
+        "in_reference_period": false,
+        "merra2_rain_mm": 978.5,
+        "imerg_rain_mm": null,
+        "merra2_longest_dry_spell_d": 4,
+        "imerg_missing_days": 47,
+        "imerg_spell_missing_days": 16,
+        "status": "incomplete"
+      },
+      "resolution": "MERRA-2 0.5\u00b0x0.625\u00b0 / IMERG 0.1\u00b0",
+      "period": "June 1 - October 31 (2015-2025 Reference Period)",
+      "data_type": "Reanalysis and satellite-derived precipitation estimates",
+      "confidence": "medium",
+      "notes": "10-year reference baseline. MERRA-2 and IMERG kept separate. 2026 IMERG has 47 trailing missing days (16 in July-Sept window) and is treated as incomplete without zero imputation."
+    },
+    "dry_spell_max_days": {
+      "value": 2.9,
+      "range": [
+        1,
+        10
+      ],
+      "merra2_range": [
+        1,
+        4
+      ],
+      "imerg_range": [
+        3,
+        10
+      ],
+      "unit": "days",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July 1 - September 30 (Core 92-Day Vegetative Window)",
+      "data_type": "Consecutive days with precipitation < 1.0 mm",
+      "confidence": "medium",
+      "notes": "Evaluated strictly on the July 1 to September 30 dry-spell window. Longest dry spell averages 3-4 days in MERRA-2 and 5-6 days in IMERG."
+    },
+    "dry_spells_ge7d": {
+      "value": 0.4,
+      "range": [
+        0,
+        2
+      ],
+      "merra2_range": [
+        0,
+        0
+      ],
+      "imerg_range": [
+        0,
+        2
+      ],
+      "unit": "events/season",
+      "datasets": [
+        "MERRA-2",
+        "GPM IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July 1 - September 30",
+      "data_type": "Count of dry spells lasting >= 7 consecutive days",
+      "confidence": "medium",
+      "notes": "Rare in MERRA-2 (0 occurrences across 10 years); IMERG identifies 0 to 2 occurrences per season."
+    },
+    "ndvi_cover_nov_jun": {
+      "value": 0.35,
+      "range": [
+        0.24,
+        0.42
+      ],
+      "unit": "NDVI",
+      "dataset": "MODIS MOD13Q1",
+      "resolution": "250m (~6.25 hectares per pixel)",
+      "period": "November - June (2015-2026)",
+      "data_type": "Satellite vegetation index (16-day composite)",
+      "quality_filter": "Good-quality composites only (reliability 0 and 1, 80.51% usable)",
+      "confidence": "high",
+      "notes": "Landscape vegetation-cover context only. Pixel is ~6.25 ha and reflects area tree/brush cover; do not interpret as direct single-field crop stress or yield."
+    },
+    "slope_pct": {
+      "value": 0.8,
+      "unit": "%",
+      "dataset": "SRTM v3",
+      "resolution": "30m",
+      "elevation_m": 25.0,
+      "period": "Static terrain model",
+      "data_type": "Derived radar digital elevation model",
+      "confidence": "high",
+      "notes": "Represents area-level slope context. Very gentle plain slope (<1%) with elevation 25-26 m; low water runoff erosion risk."
+    },
+    "soil_texture": {
+      "value": "Sandy loam (inferred)",
+      "unit": "57% sand, 12% clay",
+      "sand_pct": 56.8,
+      "clay_pct": 12.0,
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Spatial machine learning prediction (Q0.5 median)",
+      "confidence": "medium",
+      "notes": "Modelled soil prediction, not laboratory test. Silt fraction not extracted; partial textural indication only."
+    },
+    "soc": {
+      "value": 7.9,
+      "topsoil_0_5cm": 10.1,
+      "unit": "g/kg",
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property (Q0.5)",
+      "confidence": "medium",
+      "notes": "Modelled soil organic carbon prediction: 10.1 g/kg (0-5cm), 8.1 g/kg (5-15cm), 5.5 g/kg (15-30cm). Moderately low organic matter typical of West African upland soils."
+    },
+    "ph": {
+      "value": 5.3,
+      "unit": "pH (H2O)",
+      "dataset": "ISRIC SoilGrids 2.0",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property (Q0.5)",
+      "confidence": "medium",
+      "notes": "Modelled soil prediction across 0-30cm depths. Moderately acidic topsoil (pH 5.2 - 5.4). Well-suited to groundnut, cowpea, and pearl millet; slightly acidic for sensitive maize varieties."
+    },
+    "soil_moisture_regional": {
+      "value": 0.227,
+      "surface_value": 0.204,
+      "unit": "m3/m3",
+      "dataset": "NASA SMAP L4_SM v8.1",
+      "resolution": "9km (EASE-Grid 2.0)",
+      "period": "July - October (2015-2025 mid-month snapshots)",
+      "data_type": "Modelled geophysical assimilation",
+      "confidence": "medium",
+      "notes": "Regional subsoil moisture snapshot (0-100cm). Nearest grid cell centroid is 6.168 km from field. Mid-month snapshots, not continuous field sensor probes."
+    }
+  },
+  "disclaimer": "Demonstration data grounded in NASA and SoilGrids pilot datasets. Recommendations are decision-support suggestions, not guaranteed yield outcomes. Farmers and local agricultural extension officers must review recommendations before field planting."
+}
